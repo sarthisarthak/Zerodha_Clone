@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,13 +8,13 @@ const Navbar = () => {
       style={{ backgroundColor: "white" }}
     >
       <div class="container p-2">
-        <a class="navbar-brand" href="/">
+        <Link class="navbar-brand" to="/">
           <img
             src="media/images/logo.svg"
             alt="Logo"
             style={{ width: "25%" }}
           />
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -28,29 +29,29 @@ const Navbar = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="/">
+              <Link class="nav-link " aria-current="page" to="/signup">
                 Signup
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <Link class="nav-link" to="/about">
                 About
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <Link class="nav-link" to="/product">
                 Products
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <Link class="nav-link" to="/pricing">
                 Pricing
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <Link class="nav-link" to="/support">
                 Support
-              </a>
+              </Link>
             </li>
           </ul>
           <form class="d-flex" role="search"></form>
