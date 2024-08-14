@@ -15,3 +15,28 @@ code {
 .nav-link {
   margin-left: 40px;
 }
+
+#support_hero {
+  background-color: rgb(56, 126, 209);
+  color: white;
+}
+
+#support_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+#support_hero input {
+  padding: 15px 15px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#support_search a {
+  margin-left: 20px;
+}
